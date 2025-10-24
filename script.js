@@ -57,6 +57,20 @@ document.addEventListener("DOMContentLoaded", () => {
       pauseIcon.style.display = "block";
     }
   });
+
+  const elements = document.querySelectorAll(".fade-in");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      } else {
+        entry.target.classList.remove("visible"); // opcional si quieres que se repita al volver
+      }
+    });
+  }, { threshold: 0.3 }); // el 30% visible ya dispara la animación
+
+  elements.forEach(el => observer.observe(el));
 });
 
 // --- Animación de la frase al hacer scroll ---

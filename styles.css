@@ -217,7 +217,7 @@ body, html {
 .invitacion {
   position: relative;
   width: 100%;
-  height: 90vh; /* ocupa toda la pantalla */
+  height: 500px; /* ocupa toda la pantalla */
   background: url('img/texture-5edc12da.png') no-repeat center center/cover; /* Fondo */
   display: flex;
   align-items: center;
@@ -235,6 +235,8 @@ body, html {
   inset: 0;
   background-color: rgb(190, 161, 123);
   z-index: 1;
+  height: 500px;
+  
   
 }
 
@@ -243,7 +245,7 @@ body, html {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -30%);
   width: 90%;
   max-width: 800px;
   z-index: 2;
@@ -259,7 +261,7 @@ body, html {
   z-index: 3;
   max-width: 800px;
   width: 90%;
-  margin-top: -170px;
+  margin-top: -50px;
 }
 
 .texto-invitacion .titulo {
@@ -313,9 +315,24 @@ body, html {
 }
 
 .boton-whatsapp:hover {
-  background-color: #1ebe5d;
+  background-color: #52513a;
   transform: scale(1.05);
 }
+
+#count {
+  position: relative;
+  height: 100vh;
+  background-image: url('img/counter_x2-3a86dcd3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
 
 
 
