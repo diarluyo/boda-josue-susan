@@ -204,7 +204,7 @@ body, html {
 /* SECCION FOTO */
 .seccion-foto {
   width: 100%;
-  height: 50vh; /* ajusta si quieres menos alto, por ejemplo 80vh */
+  height: 60vh; /* ajusta si quieres menos alto, por ejemplo 80vh */
   background-image: url('img/Galeria4_x1-cf52eb7a.jpg');
   background-size: cover;      /* asegura que cubra todo */
   background-position: center; /* centra la parte visible */
@@ -213,30 +213,29 @@ body, html {
 }
 
 
-
 /* INVITACION */
 .invitacion {
   position: relative;
   width: 100%;
-  height: 100vh; /* ocupa toda la pantalla */
+  height: 90vh; /* ocupa toda la pantalla */
   background: url('img/texture-5edc12da.png') no-repeat center center/cover; /* Fondo */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
-  overflow: hidden;
-  
+  overflow: visible;
   font-family: 'The Seasons', sans-serif;
+ 
 }
 
 /* Capa sutil oscura para legibilidad */
 .invitacion .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 1;
   background-color: rgb(190, 161, 123);
+  z-index: 1;
+  
 }
 
 /* Imagen decorativa encima del fondo */
@@ -247,47 +246,86 @@ body, html {
   transform: translate(-50%, -50%);
   width: 90%;
   max-width: 800px;
-  opacity: 0.85;
   z-index: 2;
+  margin-top: -160px;
 }
 
 /* Texto principal */
 .texto-invitacion {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 3;
-  max-width: 700px;
-  padding: 2rem;
+  max-width: 800px;
+  width: 90%;
+  margin-top: -170px;
 }
 
 .texto-invitacion .titulo {
-  font-size: 1.3rem;
+  font-size: 20px;
   letter-spacing: 3px;
-  color: #f9e4c8;
-  margin-bottom: 0.5rem;
+  color: #BEA17B;
+  margin: 25px;
 }
 
-.texto-invitacion .nombres {
-  font-family: 'sloop-script-two', cursive;
+.texto-invitacion .nombres-inv {
+  font-family: "Sloop Script", cursive;
   font-size: 3rem;
-  color: #fff;
+  color: #BEA17B;
   margin: 0.5rem 0;
 }
 
 .texto-invitacion .mensaje {
   font-size: 1.1rem;
-  color: #f2f2f2;
-  margin: 1rem 0 1.5rem;
+  font-weight: bold;
+  color: #BEA17B;
+  margin: 25px;
   line-height: 1.5;
 }
 
-.texto-invitacion .detalle {
+.texto-invitacion .nota-lg-1 {
+  font-size: 23px;
+  color: #BEA17B;
   font-weight: bold;
-  color: #f9e4c8;
-  margin: 0.3rem 0;
+}
+.texto-invitacion .nota-lg-2 {
+  font-size: 15px;
+  color: #BEA17B;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-right: 15px ;
+  
+  
 }
 
-.texto-invitacion .nota {
-  font-size: 0.95rem;
-  color: #fff;
-  opacity: 0.9;
+.boton-whatsapp {
+  display: inline-block;
+  background-color: #BEA17B; 
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  z-index: 3;
+  position: relative;
+}
+
+.boton-whatsapp:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.05);
+}
+
+
+
+/* --- Estilos para pantallas >= 768px (tablet/pc) --- */
+@media (min-width:1280px) {
+  .seccion-foto {
+    height: 80vh; /* más alto en pantallas grandes */
+  }
+  .invitacion .decoracion {
+    margin-top: -10px;
+  }
+  
 }
