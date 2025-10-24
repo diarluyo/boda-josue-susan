@@ -1,0 +1,293 @@
+@font-face {
+  font-family: "The Seasons";
+  src: url("fonts/The Seasons Font/Fontspring-DEMO-theseasons-lt.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:"Sloop Script" ;
+  src: url("fonts/Sloop Script Bold Two Regular/Sloop Script Bold Two Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+/* --- ESTILOS GENERALES --- */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Georgia', serif;
+  scroll-behavior: smooth;
+}
+
+/* --- PANTALLA DE INICIO --- */
+#intro {
+  background-color: #005f56; /* Verde petróleo */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  width: 200px;
+  height: auto;
+  animation: pulse 2s infinite ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* --- CONTENIDO OCULTO AL INICIO --- */
+.hidden {
+  display: none;
+}
+
+/* --- SECCIÓN PRINCIPAL --- */
+#main {
+  position: relative;
+  height: 100vh;
+  background-image: url('img/portada_x2-99c93484.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+#main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: inherit;
+  background-size: inherit;
+  background-position: inherit;
+  background-repeat: inherit;
+  transform: scale(1.03);
+  transition: transform 3s ease;
+  z-index: -1;
+}
+
+.fade-in::before {
+  transform: scale(1);
+}
+
+
+
+/* --- ANIMACIÓN DE ENTRADA --- */
+.fade-in {
+  opacity: 1 !important;
+  /* transform: scale(1); */
+}
+
+/* --- NOMBRES --- */
+.nombres {
+  font-family: "Sloop Script", cursive;
+  color: white;
+  font-weight: 350;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.7);
+  line-height: 1.1;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  padding-top: 85px;
+  font-size: 55px;
+
+  opacity: 0;                 /*  Inicialmente oculto */
+  transform: translateY(-40px);
+  transition: opacity 3s ease, transform 3s ease;
+}
+
+/* --- ANIMACIÓN DE ENTRADA DEL TEXTO --- */
+.fade-text {
+  opacity: 1 !important;
+  transform: translateY(0);
+}
+
+/* --- TEXTO POSTERIOR --- */
+#texto {
+  min-height: 50vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+#texto p {
+  font-size: 30px;
+  color: #333;
+  text-align: center;
+  max-width: 90%;
+}
+/* --- BOTÓN DE MÚSICA --- */
+
+.music-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.144);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.music-button:hover {
+  background-color: rgba(255, 255, 255, 0.158);
+  transform: scale(1.1);
+}
+
+.music-button svg {
+  transition: opacity 0.3s ease;
+  fill: #ffffff34;
+}
+
+
+.music-button:hover {
+  background-color: rgba(255, 255, 255, 0.13);
+  transform: scale(1.1);
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* --- SECCIÓN FRASE --- */
+.frase-1 {
+  background-color: rgb(190, 161, 123); /* color dorado suave */
+  height: 100px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* padding: 60px 20px; */
+  margin: 0;
+  
+}
+
+.frase-1 h1 {
+  font-family: "The Seasons", serif;
+  font-size: 30px;
+  color: white;
+  line-height: 1.3;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  margin: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* Animación de aparición al hacer scroll */
+.frase-1.visible h1 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* SECCION FOTO */
+.seccion-foto {
+  width: 100%;
+  height: 50vh; /* ajusta si quieres menos alto, por ejemplo 80vh */
+  background-image: url('img/Galeria4_x1-cf52eb7a.jpg');
+  background-size: cover;      /* asegura que cubra todo */
+  background-position: center; /* centra la parte visible */
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+
+
+/* INVITACION */
+.invitacion {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* ocupa toda la pantalla */
+  background: url('img/texture-5edc12da.png') no-repeat center center/cover; /* Fondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  
+  font-family: 'The Seasons', sans-serif;
+}
+
+/* Capa sutil oscura para legibilidad */
+.invitacion .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  background-color: rgb(190, 161, 123);
+}
+
+/* Imagen decorativa encima del fondo */
+.invitacion .decoracion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 800px;
+  opacity: 0.85;
+  z-index: 2;
+}
+
+/* Texto principal */
+.texto-invitacion {
+  position: relative;
+  z-index: 3;
+  max-width: 700px;
+  padding: 2rem;
+}
+
+.texto-invitacion .titulo {
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  color: #f9e4c8;
+  margin-bottom: 0.5rem;
+}
+
+.texto-invitacion .nombres {
+  font-family: 'sloop-script-two', cursive;
+  font-size: 3rem;
+  color: #fff;
+  margin: 0.5rem 0;
+}
+
+.texto-invitacion .mensaje {
+  font-size: 1.1rem;
+  color: #f2f2f2;
+  margin: 1rem 0 1.5rem;
+  line-height: 1.5;
+}
+
+.texto-invitacion .detalle {
+  font-weight: bold;
+  color: #f9e4c8;
+  margin: 0.3rem 0;
+}
+
+.texto-invitacion .nota {
+  font-size: 0.95rem;
+  color: #fff;
+  opacity: 0.9;
+}
