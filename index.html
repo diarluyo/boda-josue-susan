@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación de Boda</title>
+
+  <!-- Fuente cursiva similar a Sloop Script Two -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=The+Seasons&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Pantalla de inicio -->
+  <div id="intro">
+    <img src="img/SelloInv-30fcc3f7.png" alt="Logo Boda" id="logo">
+  </div>
+
+  <!-- Contenido oculto al inicio -->
+  <div id="content" class="hidden">
+    <!--  -->
+    <section id="main" class="fade-container">
+      <div class="overlay">
+        <h1 class="nombres fade-element">Josué & Susan</h1>
+      </div>
+      <!--  Botón de música -->
+      <button id="music-btn" class="music-button hidden">
+        <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="22" height="22">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+        <svg id="pause-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="22" height="22" style="display:none;">
+          <path d="M6 19h4V5H6zm8-14v14h4V5h-4z"/>
+        </svg>
+      </button>
+
+      <audio id="music" loop>
+        <source src="music/musicafondo.mp3" type="audio/mpeg">
+      </audio>
+    </section>
+    <!-- Seccion corta Frase -->
+    <div class="frase-1 bg-principal">
+      <h1>Nuestro amor es la <br> mejor aventura</h1>
+    </div>
+    <!-- Seccion Foto -->
+    <div class="seccion-foto"></div>
+
+    <!-- Seccion Invitación -->
+    <div class="invitacion">
+      <div class="overlay"></div>
+      <img src="img/texture-5edc12da.png" class="decoracion" alt="decoracion">
+
+      <div class="texto-invitacion">
+        <h3 class="titulo">ES UN PLACER INVITARTE</h3>
+        <h1 class="nombres">Josué &amp; Susan</h1>
+        <p class="mensaje">
+          A nuestro enlace matrimonial, será un honor contar con su compañía en el día más especial de nuestras vidas celebrando nuestro amor.
+        </p>
+        <p class="detalle">2 Pases</p>
+        <p class="detalle">No. Mesa:</p>
+        <p class="nota">Gracias por confirmar tu asistencia</p>
+        <p class="nota">Favor de presentar este código en la entrada del evento</p>
+      </div>
+    </div>
+
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
