@@ -71,13 +71,40 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { threshold: 0.3 }); // el 30% visible ya dispara la animación
 
   elements.forEach(el => observer.observe(el));
-});
+  });
 
-// --- Animación de la frase al hacer scroll ---
-const frase = document.querySelector('.frase-1');
-window.addEventListener('scroll', () => {
-  const rect = frase.getBoundingClientRect();
-  if (rect.top < window.innerHeight * 0.75) {
-    frase.classList.add('visible');
-  }
+  // --- Animación de la frase al hacer scroll ---
+  const frase = document.querySelector('.frase-1');
+  window.addEventListener('scroll', () => {
+    const rect = frase.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.75) {
+      frase.classList.add('visible');
+    }
+
+  /* CONTADOR */
+  const targetDate = new Date("Nov 29, 2025 00:00:00").getTime();
+
+  const timer = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    if (distance <= 0) {
+      clearInterval(timer);
+      document.querySelector(".countdown").innerHTML =
+        "<p> ¡Hoy es el gran día!</p>";
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = hours;
+    document.getElementById("minutes").textContent = minutes;
+    document.getElementById("seconds").textContent = seconds;
+  }, 1000);
+
+
 });

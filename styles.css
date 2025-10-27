@@ -50,7 +50,7 @@ body, html {
 #main {
   position: relative;
   height: 100vh;
-  background-image: url('img/portada_x2-99c93484.webp');
+  background-image: url('img/ROY_4222-new.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -171,7 +171,7 @@ body, html {
 
 /* --- SECCIÓN FRASE --- */
 .frase-1 {
-  background-color: rgb(190, 161, 123); /* color dorado suave */
+  background-color: rgb(11, 59, 47); /* color dorado suave */
   height: 100px; 
   display: flex;
   justify-content: center;
@@ -205,7 +205,7 @@ body, html {
 .seccion-foto {
   width: 100%;
   height: 60vh; /* ajusta si quieres menos alto, por ejemplo 80vh */
-  background-image: url('img/Galeria4_x1-cf52eb7a.jpg');
+  background-image: url('img/ROY_4275-new.jpg');
   background-size: cover;      /* asegura que cubra todo */
   background-position: center; /* centra la parte visible */
   background-repeat: no-repeat;
@@ -233,7 +233,7 @@ body, html {
 .invitacion .overlay {
   position: absolute;
   inset: 0;
-  background-color: rgb(190, 161, 123);
+  background-color: #0b3b2f;
   z-index: 1;
   height: 500px;
   
@@ -267,33 +267,33 @@ body, html {
 .texto-invitacion .titulo {
   font-size: 20px;
   letter-spacing: 3px;
-  color: #BEA17B;
+  color: #0b3b2f;
   margin: 25px;
 }
 
 .texto-invitacion .nombres-inv {
   font-family: "Sloop Script", cursive;
   font-size: 3rem;
-  color: #BEA17B;
+  color: #0b3b2f;
   margin: 0.5rem 0;
 }
 
 .texto-invitacion .mensaje {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #BEA17B;
+  color: #0b3b2f;
   margin: 25px;
   line-height: 1.5;
 }
 
 .texto-invitacion .nota-lg-1 {
   font-size: 23px;
-  color: #BEA17B;
+  color: #0b3b2f;
   font-weight: bold;
 }
 .texto-invitacion .nota-lg-2 {
   font-size: 15px;
-  color: #BEA17B;
+  color: #0b3b2f;
   font-weight: bold;
   margin-left: 15px;
   margin-right: 15px ;
@@ -303,7 +303,7 @@ body, html {
 
 .boton-whatsapp {
   display: inline-block;
-  background-color: #BEA17B; 
+  background-color: #0b3b2f;
   color: white;
   padding: 12px 24px;
   border-radius: 50px;
@@ -315,22 +315,95 @@ body, html {
 }
 
 .boton-whatsapp:hover {
-  background-color: #52513a;
+  background-color: #2a8871;
   transform: scale(1.05);
 }
+
+/* SECCION CONTADOR */
 
 #count {
   position: relative;
   height: 100vh;
-  background-image: url('img/counter_x2-3a86dcd3.jpg');
+  background-image: url('img/ROY_4275 B-N-new.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  opacity: 0;
   transition: opacity 1.5s ease;
+}
+#timer {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+#countdown-container {
+  text-align: center;
+  color: #0b3b2f; /* tono dorado */
+  font-family: 'The Seasons', serif;
+  padding: 50px 20px;
+  
+}
+
+.date-title {
+  background: #0b3b2f;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.time-box {
+  background-color: #0b3b2f;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 2px;
+  width: 40px;
+  text-align: center;
+}
+
+.time-box span {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.time-box p {
+  margin: 0;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.calendar-btn {
+  background: #0b3b2f;
+  border: 2px solid #0b3b2f;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.calendar-btn:hover {
+  background: #2b816c;
+  color: white;
+}
+
+.calendar-btn i {
+  margin-right: 8px;
 }
 
 
