@@ -11,39 +11,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let musicPlaying = false;
 
-  // Al cargar, bloquear el scroll
+  // --- BLOQUEAR SCROLL AL INICIO ---
   document.body.style.overflowY = "hidden";
 
+  // --- LOGO CLICK ---
   logo.addEventListener("click", () => {
-    // Oculta la pantalla inicial y muestra el contenido principal
     intro.style.display = "none";
     content.classList.remove("hidden");
     document.body.style.overflowY = "auto";
 
-    // Animaciones suaves
     setTimeout(() => main.classList.add("fade-in"), 100);
     setTimeout(() => nombres.classList.add("fade-text"), 600);
+    setTimeout(() => musicBtn.classList.remove("hidden"), 2000);
 
-    // Mostrar botón de música luego de la animación
-    setTimeout(() => {
-      musicBtn.classList.remove("hidden");
-    }, 2000);
-
-    // Intentar reproducir música automáticamente SOLO después del clic
+    // Intentar reproducir música automáticamente luego del clic
     setTimeout(() => {
       music.play().then(() => {
         musicPlaying = true;
         playIcon.style.display = "none";
         pauseIcon.style.display = "block";
       }).catch(() => {
-        // Si el navegador bloquea la reproducción automática
         playIcon.style.display = "block";
         pauseIcon.style.display = "none";
       });
     }, 2500);
   });
 
-  // Control manual del botón de música
+  // --- CONTROL BOTÓN DE MÚSICA ---
   musicBtn.addEventListener("click", () => {
     if (musicPlaying) {
       music.pause();
@@ -58,30 +52,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // --- ANIMACIONES CON INTERSECTION OBSERVER ---
   const elements = document.querySelectorAll(".fade-in");
+  const frases = document.querySelectorAll(".frase-1"); // <--- todas tus frases
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
       } else {
-        entry.target.classList.remove("visible"); // opcional si quieres que se repita al volver
+        entry.target.classList.remove("visible"); // si quieres que se repita al volver
       }
     });
-  }, { threshold: 0.3 }); // el 30% visible ya dispara la animación
+  }, { threshold: 0.3 });
 
+  // Observa todos los elementos animables
   elements.forEach(el => observer.observe(el));
-  });
+  frases.forEach(frase => observer.observe(frase));
 
-  // --- Animación de la frase al hacer scroll ---
-  const frase = document.querySelector('.frase-1');
-  window.addEventListener('scroll', () => {
-    const rect = frase.getBoundingClientRect();
-    if (rect.top < window.innerHeight * 0.75) {
-      frase.classList.add('visible');
-    }
-
-  /* CONTADOR */
+  // --- CONTADOR ---
   const targetDate = new Date("Nov 29, 2025 00:00:00").getTime();
 
   const timer = setInterval(() => {
@@ -91,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (distance <= 0) {
       clearInterval(timer);
       document.querySelector(".countdown").innerHTML =
-        "<p> ¡Hoy es el gran día!</p>";
+        "<p>¡Hoy es el gran día!</p>";
       return;
     }
 
@@ -105,6 +94,4 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("minutes").textContent = minutes;
     document.getElementById("seconds").textContent = seconds;
   }, 1000);
-
-
 });
