@@ -205,7 +205,7 @@ body, html {
 .seccion-foto {
   width: 100%;
   height: 60vh; /* ajusta si quieres menos alto, por ejemplo 80vh */
-  background-image: url('img/ROY_4275-new.jpg');
+  background-image: url('img/ROY_4300-new.jpg');
   background-size: cover;      /* asegura que cubra todo */
   background-position: center; /* centra la parte visible */
   background-repeat: no-repeat;
@@ -267,7 +267,7 @@ body, html {
 .texto-invitacion .titulo {
   font-size: 20px;
   letter-spacing: 3px;
-  color: #0b3b2f;
+  color: #af7a33;
   margin: 25px;
 }
 
@@ -303,7 +303,7 @@ body, html {
 
 .boton-whatsapp {
   display: inline-block;
-  background-color: #0b3b2f;
+  background-color: #af7a33;
   color: white;
   padding: 12px 24px;
   border-radius: 50px;
@@ -342,7 +342,7 @@ body, html {
 
 #countdown-container {
   text-align: center;
-  color: #0b3b2f; /* tono dorado */
+  color: #0b3b2f; 
   font-family: 'The Seasons', serif;
   padding: 50px 20px;
   
@@ -355,6 +355,9 @@ body, html {
   font-weight: 500;
   letter-spacing: 2px;
   margin-bottom: 25px;
+  padding: 10px;
+  border-radius: 7px;
+  
 }
 
 .countdown {
@@ -363,15 +366,17 @@ body, html {
   gap: 15px;
   margin-bottom: 30px;
   flex-wrap: wrap;
+  
 }
 
 .time-box {
-  background-color: #0b3b2f;
+  background-color: #af7a33;
   color: white;
   padding: 15px 20px;
   border-radius: 2px;
-  width: 40px;
+  width: 35px;
   text-align: center;
+  border-radius: 10px;
 }
 
 .time-box span {
@@ -388,13 +393,13 @@ body, html {
 
 .calendar-btn {
   background: #0b3b2f;
-  border: 2px solid #0b3b2f;
   color: #ffffff;
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  
 }
 
 .calendar-btn:hover {
