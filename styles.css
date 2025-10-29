@@ -212,6 +212,33 @@ body, html {
   overflow: hidden;
 }
 
+.seccion-foto-1 {
+  width: 100%;
+  height: 60vh; /* ajusta si quieres menos alto, por ejemplo 80vh */
+  background-image: url('img/ROY_4328-new.jpg');
+  background-size: cover;      /* asegura que cubra todo */
+  background-position: center; /* centra la parte visible */
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.seccion-foto-2 {
+  width: 100%;
+  height: 60vh; /* ajusta si quieres menos alto, por ejemplo 80vh */
+  background-image: url('img/ROY_4291-new.jpg');
+  background-size: cover;      /* asegura que cubra todo */
+  background-position: center; /* centra la parte visible */
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.seccion-foto-3 {
+  width: 100%;
+  height: 80vh; /* ajusta si quieres menos alto, por ejemplo 80vh */
+  background-image: url('img/ROY_4280-new.jpg');
+  background-size: cover;      /* asegura que cubra todo */
+  background-position: center; /* centra la parte visible */
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
 
 /* INVITACION */
 .invitacion {
@@ -226,6 +253,23 @@ body, html {
   color: white;
   overflow: visible;
   font-family: 'The Seasons', sans-serif;
+  border-radius: 50PX;
+ 
+}
+/* invitación padrinos */
+.invitacion-padrinos {
+  position: relative;
+  width: 100%;
+  height: 200px; /* ocupa toda la pantalla */
+  background: url('img/texture-5edc12da.png') no-repeat center center/cover; /* Fondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: visible;
+  font-family: 'The Seasons', sans-serif;
+  border-radius: 50PX;
  
 }
 
@@ -236,6 +280,16 @@ body, html {
   background-color: #0b3b2f;
   z-index: 1;
   height: 500px;
+  
+  
+}
+/* overlay padrinos */
+.invitacion-padrinos .overlay-padrinos {
+  position: absolute;
+  inset: 0;
+  background-color: #0b3b2f;
+  z-index: 2;
+  height: 200px;
   
   
 }
@@ -252,6 +306,20 @@ body, html {
   margin-top: -160px;
 }
 
+/* textura-padrinos */
+.invitacion-padrinos .decoracion-padrinos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  width: 90%;
+  height: 200px;
+  max-width: 400px;
+  z-index: 2;
+  margin-top: -80px;
+}
+
+
 /* Texto principal */
 .texto-invitacion {
   position: absolute;
@@ -264,6 +332,17 @@ body, html {
   margin-top: -50px;
 }
 
+.texto-invitacion-padrinos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  max-width: 400px;
+  width: 90%;
+  margin-top: -40px;
+}
+
 .texto-invitacion .titulo {
   font-size: 20px;
   letter-spacing: 3px;
@@ -271,7 +350,27 @@ body, html {
   margin: 25px;
 }
 
+.texto-invitacion .titulo-1 {
+  font-size: 20px;
+  
+  color: #af7a33;
+  margin: 25px;
+}
+.texto-invitacion-padrinos .titulo-2 {
+  font-size: 20px;
+  color: #af7a33;
+  margin: 25px;
+}
+
 .texto-invitacion .nombres-inv {
+  font-family: "Sloop Script", cursive;
+  font-size: 3rem;
+  color: #0b3b2f;
+  margin: 0.5rem 0;
+}
+
+/* Padrinos */
+.texto-invitacion-padrinos .nombres-inv {
   font-family: "Sloop Script", cursive;
   font-size: 3rem;
   color: #0b3b2f;
@@ -411,6 +510,13 @@ body, html {
   margin-right: 8px;
 }
 
+/* PADRES */
+.texto-invitacion .nombres-inv-2 {
+  font-family: "Sloop Script", cursive;
+  font-size: 2rem;
+  color: #0b3b2f;
+  margin: 0.5rem 0;
+}
 
 
 
@@ -421,6 +527,7 @@ body, html {
   }
   .invitacion .decoracion {
     margin-top: -10px;
+    border-radius: 10px;
   }
   
 }
