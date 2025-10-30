@@ -674,7 +674,7 @@ body, html {
   margin-bottom: 20px;
 }
 
-.texto-invitacion-regalos .nombres-local {
+.texto-invitacion-regalos .nombres-regalos {
   font-family: "Sloop Script", cursive;
   font-size: 4rem;
   color: #bea17b;
@@ -702,6 +702,113 @@ body, html {
 
 .regalos-btn:hover {
   background: #af7a33;
+}
+
+/* ICONO REGALO */
+
+.icono-regalos {
+  display: flex;                /* Para centrar si lo necesitas */
+  justify-content: center;      /* Centra horizontalmente */
+  align-items: center;          /* Centra verticalmente */
+  margin: 10px 0;               /* Espaciado arriba y abajo */
+}
+
+.icono-regalos svg {
+  width: 35px;                  /* Tamaño del icono */
+  height: 35px;                 /* Mantiene proporción */
+  fill: #bea17b;                /* Color del vector (puedes cambiarlo) */
+  transition: fill 0.3s ease;   /* Efecto suave al cambiar color */
+}
+
+
+/* ===== SECCIÓN CODIGO DE VESTIMENTA ===== */
+.cod-vestimenta {
+  position: relative;
+  height: 100vh;
+  background-image: url('img/ROY_4222-new.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  font-family: 'The Seasons', sans-serif;
+}
+
+/* Textura decorativa */
+.decoracion-cod-vestimenta {
+  position: absolute;
+  width: 90%;
+  max-width: 450px;
+  opacity: 0.9;
+  z-index: 1;
+  height: 200px ;
+  border-radius: 15px;
+  margin-bottom: -10px;
+}
+
+/* Contenedor del texto + botón (encima de la textura) */
+.contenido-cod-vestimenta{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 450px;
+  padding: 40px 20px;
+}
+
+/* Texto */
+.texto-invitacion-cod-vestimenta {
+  margin-bottom: 20px;
+}
+
+.texto-invitacion-cod-vestimenta .nombres-vestimenta {
+  font-family: "Sloop Script", cursive;
+  font-size: 4rem;
+  color: #bea17b;
+  margin: 0;
+}
+.nombres-vestimenta {
+  font-family: "Sloop Script", cursive;
+  font-size: 2.5rem;
+  color: #bea17b;
+  margin: 0;
+}
+
+.texto-invitacion-cod-vestimenta .titulo-2 {
+  font-family: "The Seasons", cursive;
+  font-size: 24px;
+  color: #bea17b;
+  margin: 0;
+}
+
+/* Botón */
+.regalos-btn {
+  background: #bea17b;
+  color: #ffffff;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+.regalos-btn:hover {
+  background: #af7a33;
+}
+
+/* Saco */
+.icono-saco svg {
+  width: 30px;     /* Tamaño del SVG */
+  height: auto;
+  color: #bea17b;   /* Color dorado */
+  margin-bottom: 5px;
+  
 }
 
 
