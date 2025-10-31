@@ -10,6 +10,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family:"Cinzel" ;
+  src: url("fonts/cinzel/CinzelDecorative-Regular.otf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 /* --- ESTILOS GENERALES --- */
 body, html {
   margin: 0;
@@ -545,7 +551,7 @@ body, html {
 #countdown-container {
   text-align: center;
   color: #29402F; 
-  font-family: 'The Seasons', serif;
+  font-family: 'Cinzel', serif;
   padding: 50px 20px;
   
 }
@@ -915,8 +921,70 @@ body, html {
   margin: 0.5rem 0;
 }
 
+/* SECCION COMPARTE FOTOS */
 
+.invitacion .decoracion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  width: 90%;
+  max-width: 800px;
+  z-index: 2;
+  margin-top: -160px;
+  border-radius: 15px;
+}
 
+.invitacion-padrinos .decoracion-padrinos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  width: 90%;
+  height: 200px;
+  max-width: 400px;
+  z-index: 2;
+  margin-top: -80px;
+  border-radius: 15px;
+}
+.texto-invitacion-comparte {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  max-width: 400px;
+  width: 90%;
+  margin-top: -40px;
+}
+.texto-invitacion-comparte .titulo-2 {
+  font-size: 20px;
+  color: #bea17b;
+  margin: -5px;
+}
+.texto-invitacion-comparte .hastag {
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  color: #bea17b;
+  margin: -5px;
+}
+.texto-invitacion-comparte .nombres-inv {
+  font-family: "Sloop Script", cursive;
+  font-size: 4rem;
+  color: #29402F;
+  margin: 0.5rem 0;
+}
+
+/* Seccion-foto-4 */
+.seccion-foto-4 {
+  width: 100%;
+  height: 50vh; /* ajusta si quieres menos alto, por ejemplo 80vh */
+  background-image: url('img/camara.jpg');
+  background-size: cover;      /* asegura que cubra todo */
+  background-position: center; /* centra la parte visible */
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
 
 
 /* --- Estilos para pantallas >= 768px (tablet/pc) --- */
