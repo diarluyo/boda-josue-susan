@@ -662,7 +662,8 @@ body, html {
   max-width: 500px;
   height: 250px;
   z-index: 1;
-  margin-bottom: -50px;
+  margin-bottom: -100px;
+  opacity: 0.9;
 }
 
 /* Contenido encima de la textura */
@@ -674,7 +675,7 @@ body, html {
   align-items: center;
   justify-content: center;
   max-width: 450px;
-  margin-bottom: -50px;
+  margin-bottom: -100px;
 
 }
 
