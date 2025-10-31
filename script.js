@@ -94,4 +94,24 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("minutes").textContent = minutes;
     document.getElementById("seconds").textContent = seconds;
   }, 1000);
+
+  // --- CARRUSEL GALERÍA ---
+  const carrusel = document.querySelector('.contenido-galeria');
+  const nextBtn = document.querySelector('.next');
+  const prevBtn = document.querySelector('.prev');
+
+  let index = 0;
+  const total = document.querySelectorAll('.contenido-galeria img').length;
+
+  nextBtn.addEventListener('click', () => {
+    index = (index + 1) % total;
+    carrusel.style.transform = `translateX(-${index * 100}%)`;
+  });
+
+  prevBtn.addEventListener('click', () => {
+    index = (index - 1 + total) % total;
+    carrusel.style.transform = `translateX(-${index * 100}%)`;
+  });
+
+
 });

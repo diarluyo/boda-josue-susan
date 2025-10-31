@@ -828,6 +828,95 @@ body, html {
   
 }
 
+/* SECCION GALERIA DE FOTOS */
+.galeria {
+  background-color: #bea17b;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'The Seasons', serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Título */
+.titulo-galeria {
+ font-family: "Sloop Script", cursive;
+  font-size: 4.5rem;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;              /* Elimina espacios arriba y abajo */
+  line-height: 0.9;       /* Acerca las líneas */
+}
+
+.titulo-fotos{
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+/* Carrusel */
+.carrusel-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.contenido-galeria {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.contenido-galeria img {
+  width: 100%;
+  flex-shrink: 0;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Botones del carrusel */
+.btn-carrusel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #bea17b;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 8px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+.btn-carrusel:hover {
+  background: rgba(190, 161, 123, 1);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Firma */
+.firma {
+  font-family: "Sloop Script", cursive;
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0.5rem 0;
+}
+
+
+
 
 
 /* --- Estilos para pantallas >= 768px (tablet/pc) --- */
