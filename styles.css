@@ -639,24 +639,24 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'The Seasons', sans-serif;
   text-align: center;
   overflow: hidden;
-  font-family: 'The Seasons', sans-serif;
 }
 
-/* Textura decorativa */
+/* Textura decorativa (fondo del contenido) */
 .decoracion-regalos {
   position: absolute;
-  width: 90%;
-  max-width: 450px;
-  opacity: 0.9;
-  z-index: 1;
-  height: 200px ;
+  background: url('img/texture-5edc12da.png') no-repeat center/cover;
   border-radius: 15px;
-  margin-bottom: -10px;
+  width: 90%;
+  max-width: 500px;
+  height: 250px;
+  z-index: 1;
+  margin-bottom: -50px;
 }
 
-/* Contenedor del texto + botón (encima de la textura) */
+/* Contenido encima de la textura */
 .contenido-regalos {
   position: relative;
   z-index: 2;
@@ -664,28 +664,29 @@ body, html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90%;
   max-width: 450px;
-  padding: 40px 20px;
+  margin-bottom: -50px;
+
 }
 
 /* Texto */
 .texto-invitacion-regalos {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .texto-invitacion-regalos .nombres-regalos {
   font-family: "Sloop Script", cursive;
-  font-size: 4rem;
+  font-size: 3.8rem;
   color: #bea17b;
   margin: 0;
 }
 
 .texto-invitacion-regalos .titulo-2 {
-  font-family: "The Seasons", cursive;
-  font-size: 24px;
+  font-family: "The Seasons", serif;
+  font-size: 22px;
   color: #bea17b;
   margin: 0;
+  letter-spacing: 1px;
 }
 
 /* Botón */
@@ -697,27 +698,33 @@ body, html {
   border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
-  
+  margin: 15px 0;
+  transition: background 0.3s ease;
 }
 
 .regalos-btn:hover {
   background: #af7a33;
 }
 
-/* ICONO REGALO */
-
+/* Icono de regalo */
 .icono-regalos {
-  display: flex;                /* Para centrar si lo necesitas */
-  justify-content: center;      /* Centra horizontalmente */
-  align-items: center;          /* Centra verticalmente */
-  margin: 10px 0;               /* Espaciado arriba y abajo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  background: none;
 }
 
 .icono-regalos svg {
-  width: 35px;                  /* Tamaño del icono */
-  height: 35px;                 /* Mantiene proporción */
-  fill: #bea17b;                /* Color del vector (puedes cambiarlo) */
-  transition: fill 0.3s ease;   /* Efecto suave al cambiar color */
+  width: 35px;
+  height: 35px;
+  fill: #bea17b;
+  transition: fill 0.3s ease;
+  
+}
+
+.icono-regalos svg:hover {
+  fill: #d4b98b;
 }
 
 
