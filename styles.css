@@ -937,7 +937,7 @@ body, html {
   border-radius: 50PX;
  
 }
-.invitacion-comparte .overlay-padrinos {
+.invitacion-comparte .overlay-comparte {
   position: absolute;
   inset: 0;
   background-color: #29402F;
@@ -996,7 +996,6 @@ body, html {
   background-repeat: no-repeat;
   overflow: hidden;
 }
-
 .comparte-btn {
   
   background: #bea17b;
@@ -1010,6 +1009,86 @@ body, html {
   z-index: 3;
   
 }
+
+/* SECCION SUGERENCIA DE CANCIONES */
+.seccion-foto-5 {
+  width: 100%;
+  height: 50vh; /* ajusta si quieres menos alto, por ejemplo 80vh */
+  background-image: url('img/musica.jpg');
+  background-size: cover;      /* asegura que cubra todo */
+  background-position: center; /* centra la parte visible */
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.canciones {
+  position: relative;
+  width: 100%;
+  background-color: #29402F;
+  height: 300px; /* ocupa toda la pantalla */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: visible;
+  font-family: 'The Seasons', sans-serif;
+  
+ 
+}
+
+.canciones .decoracion-canciones {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  width: 90%;
+  height: 300px;
+  max-width: 400px;
+  z-index: 2;
+  margin-top: -80px;
+  border-radius: 15px;
+}
+
+.texto-musica {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  max-width: 400px;
+  width: 90%;
+  margin-top: -40px;
+}
+.texto-musica .nombres-inv {
+  font-family: "Sloop Script", cursive;
+  font-size: 4rem;
+  color: #bea17b;
+  margin: 0.5rem 0;
+}
+.texto-musica .nombres-fam{
+  font-family: "Sloop Script", cursive;
+  font-size: 1.5rem;
+  color: #bea17b;
+  margin: 0.5rem 0;
+}
+
+.texto-musica .titulo-2 {
+  font-size: 25px;
+  color: #bea17b;
+  margin: 0;
+}
+
+.texto-musica .nota-lg-2 {
+  font-size: 15px;
+  color: #bea17b;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-right: 15px ;
+  
+  
+}
+
+
 
 
 
