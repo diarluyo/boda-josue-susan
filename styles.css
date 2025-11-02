@@ -633,6 +633,10 @@ body, html {
   z-index: 2;
   
 }
+.map-btn:hover {
+  background-color: #b98138;
+  transform: scale(1.05);
+}
 
 /* PADRES */
 .texto-invitacion .nombres-inv-2 {
@@ -1009,6 +1013,10 @@ body, html {
   z-index: 3;
   
 }
+.comparte-btn:hover {
+  background-color: #b98138;
+  transform: scale(1.05);
+}
 
 /* SECCION SUGERENCIA DE CANCIONES */
 .seccion-foto-5 {
@@ -1084,12 +1092,73 @@ body, html {
   font-weight: bold;
   margin-left: 15px;
   margin-right: 15px ;
-  
-  
 }
 
+/* SECCION TEXTO BÍBLICO  */
 
+/* ===== SECCIÓN TEXTO BÍBLICO ===== */
+.texto-biblico {
+  position: relative;
+  height: 100vh;
+  background-image: url('img/ROY_4409-new.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra verticalmente el bloque */
+  text-align: center;
+  overflow: hidden;
+  font-family: 'The Seasons', serif;
+}
 
+/* Textura decorativa */
+.decoracion-texto {
+  position: absolute;
+  bottom: 15%; /* Mueve la textura hacia la parte baja, pero no tan abajo */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 500px;
+  height: 270px;
+  opacity: 0.9;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+/* Contenedor del texto */
+.texto-1 {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+  width: 90%;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 350px;
+}
+
+/* Estilos de texto */
+.texto-1 .titulo-2 {
+  font-size: 1.1rem;
+  color: #bea17b;
+  margin: 0.3rem 0;
+  line-height: 1.4;
+}
+
+.texto-1 h1.titulo-2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.texto-1 .nombres-inv {
+  font-family: "Sloop Script", cursive;
+  font-size: 1.8rem;
+  color: #29402F;
+  margin-top: 0.8rem;
+}
 
 
 /* --- Estilos para pantallas >= 768px (tablet/pc) --- */
