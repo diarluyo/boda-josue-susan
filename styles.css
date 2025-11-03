@@ -1161,14 +1161,164 @@ body, html {
 }
 
 
-/* --- Estilos para pantallas >= 768px (tablet/pc) --- */
-@media (min-width:1280px) {
+/* --- AJUSTES RESPONSIVOS --- */
+
+/* === Celulares === */
+@media (max-width: 600px) {
+  .nombres {
+    font-size: clamp(2rem, 7vw, 3rem);
+    padding-top: 60px;
+  }
+
+  .frase-1 h1 {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+
+  .texto-invitacion .titulo,
+  .texto-invitacion .titulo-1,
+  .texto-invitacion-padrinos .titulo-2 {
+    font-size: 1rem;
+  }
+
+  .texto-invitacion .nombres-inv,
+  .texto-invitacion-local .nombres-local,
+  .texto-invitacion-regalos .nombres-regalos,
+  .texto-invitacion-cod-vestimenta .nombres-vestimenta {
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
+  }
+
+  .galeria .titulo-galeria {
+    font-size: clamp(2.2rem, 9vw, 3rem);
+  }
+
+  .galeria .titulo-fotos {
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
+    margin-top: -5px;
+  }
+
+  .contenido-galeria img {
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .texto-1 {
+    margin-top: 250px;
+  }
+
+  .decoracion-texto {
+    height: auto;
+    max-width: 90%;
+  }
+}
+
+/* === Tablets === */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .nombres {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+  }
+
+  .frase-1 h1 {
+    font-size: 1.5rem;
+  }
+
+  .texto-invitacion .titulo,
+  .texto-invitacion .titulo-1,
+  .texto-invitacion-local .titulo-2 {
+    font-size: 1.3rem;
+  }
+
+  .texto-invitacion .nombres-inv,
+  .texto-invitacion-regalos .nombres-regalos {
+    font-size: clamp(2rem, 6vw, 3rem);
+  }
+
+  .decoracion-texto {
+    height: 250px;
+  }
+
+  .galeria .titulo-galeria {
+    font-size: clamp(3rem, 7vw, 4rem);
+  }
+
+  .galeria .titulo-fotos {
+    margin-top: -8px;
+  }
+
+  .contenido-galeria img {
+    height: 400px;
+  }
+}
+
+/* === PCs y monitores grandes === */
+@media (min-width: 1025px) {
+  #main{
+  background-position: center 80%;
+
+  }
   .seccion-foto {
-    height: 80vh; /* más alto en pantallas grandes */
+    background-position: center 35%;
   }
   .invitacion .decoracion {
-    margin-top: -10px;
-    border-radius: 15px;
+    height: 550px;
+  }
+  #count{
+    background-position: center 60%;
+  }
+  .seccion-foto-1{
+    background-position: center 10%;
+  }
+  .invitacion .decoracion{
+    max-width: 500px;
+  }
+  .seccion-foto-2{
+     background-position: center 5%;
+  }
+  .seccion-foto-3{
+    background-position: center 45%;
+  }
+  .decoracion-regalos{
+    margin-top: -450px;
+  }
+  .contenido-regalos{
+    margin-top: -450px;
+  }
+  .texto-biblico{
+    
   }
   
+  .nombres {
+    font-size: clamp(3.5rem, 5vw, 5rem);
+  }
+
+  .frase-1 h1 {
+    font-size: 2rem;
+  }
+
+  .texto-invitacion .titulo,
+  .texto-invitacion .titulo-1 {
+    font-size: 1.5rem;
+  }
+
+  .texto-invitacion .nombres-inv,
+  .texto-invitacion-local .nombres-local,
+  .texto-invitacion-regalos .nombres-regalos {
+    font-size: clamp(3rem, 4vw, 4rem);
+  }
+
+  .decoracion-texto {
+    height: 280px;
+  }
+
+  .galeria .titulo-galeria {
+    font-size: clamp(3rem, 5vw, 4.5rem);
+  }
+
+  .contenido-galeria img {
+    height: 550px;
+  }
+
+  .texto-1 {
+    margin-top: 400px;
+  }
 }
