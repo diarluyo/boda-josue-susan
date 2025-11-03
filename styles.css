@@ -16,12 +16,17 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family:"BagekiLuxury" ;
+  src: url("fonts/bageki-luxury-font/BagekiLuxuryDemoRegular-1j47L.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 /* --- ESTILOS GENERALES --- */
 body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: 'Georgia', serif;
   scroll-behavior: smooth;
 }
 
@@ -190,7 +195,7 @@ body, html {
 
 .frase-1 h1 {
   font-family: "The Seasons", serif;
-  font-size: 30px;
+  font-size: 25px;
   color: white;
   line-height: 1.3;
   letter-spacing: 1.5px;
@@ -258,7 +263,7 @@ body, html {
   text-align: center;
   color: white;
   overflow: visible;
-  font-family: 'The Seasons', sans-serif;
+  font-family: 'BagekiLuxury', serif;
   border-radius: 50PX;
  
 }
@@ -274,8 +279,9 @@ body, html {
   text-align: center;
   color: white;
   overflow: visible;
-  font-family: 'The Seasons', sans-serif;
+  font-family: 'BagekiLuxury', sans-serif;
   border-radius: 50PX;
+  letter-spacing: 1.9px;
  
 }
 /* invitación local */
@@ -290,7 +296,7 @@ body, html {
   text-align: center;
   color: white;
   overflow: visible;
-  font-family: 'The Seasons', sans-serif;
+  font-family: 'BagekiLuxury', sans-serif;
   border-radius: 50PX;
  
 }
@@ -333,8 +339,9 @@ body, html {
   width: 90%;
   max-width: 800px;
   z-index: 2;
-  margin-top: -160px;
+  margin-top: -180px;
   border-radius: 15px;
+  height: 250px;
 }
 
 /* textura-padrinos */
@@ -363,7 +370,8 @@ body, html {
   text-align: center;
   color: white;
   overflow: visible;
-  font-family: 'The Seasons', sans-serif;
+  font-family: 'BagekiLuxury', sans-serif;
+  letter-spacing: 2.0px;
   border-radius: 50PX;
 }
 /* textura-local */
@@ -442,6 +450,7 @@ body, html {
   
   color: #bea17b;
   margin: 25px;
+  letter-spacing: 2.0px;
 }
 .texto-invitacion-padrinos .titulo-2 {
   font-size: 20px;
@@ -482,13 +491,15 @@ body, html {
   font-weight: bold;
   color: #29402F;
   margin: 25px;
-  line-height: 1.5;
+  line-height: 1.2;
+  letter-spacing: 2.0px;
 }
 
 .texto-invitacion .nota-lg-1 {
-  font-size: 23px;
+  font-size: 19px;
   color: #29402F;
   font-weight: bold;
+  letter-spacing: 2.0px;
 }
 .texto-invitacion .nota-lg-2 {
   font-size: 15px;
@@ -496,6 +507,7 @@ body, html {
   font-weight: bold;
   margin-left: 15px;
   margin-right: 15px ;
+  letter-spacing: 2.0px;
   
   
 }
@@ -520,6 +532,7 @@ body, html {
   font-size: 1.1rem;
   z-index: 3;
   position: relative;
+  letter-spacing: 2.0px;
 }
 
 .boton-whatsapp:hover {
@@ -540,6 +553,7 @@ body, html {
   justify-content: center;
   align-items: flex-start;
   transition: opacity 1.5s ease;
+  
 }
 #timer {
   font-size: 2.5rem;
@@ -658,7 +672,8 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'The Seasons', sans-serif;
+  font-family: 'BagekiLuxury', sans-serif;
+  letter-spacing: 2.5px;
   text-align: center;
   overflow: hidden;
 }
@@ -702,11 +717,11 @@ body, html {
 }
 
 .texto-invitacion-regalos .titulo-2 {
-  font-family: "The Seasons", serif;
-  font-size: 22px;
+  font-family: "BagekiLuxury", serif;
+  font-size: 30px;
   color: #bea17b;
   margin: 0;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
 }
 
 /* Botón */
@@ -751,7 +766,7 @@ body, html {
 /* ===== SECCIÓN CODIGO DE VESTIMENTA ===== */
 .cod-vestimenta {
   position: relative;
-  height: 50vh;
+  height: 70vh;
   background-color: #bea17b;
   background-size: cover;
   background-position: center;
@@ -760,17 +775,19 @@ body, html {
   align-items: center;
   text-align: center;
   overflow: hidden;
-  font-family: 'The Seasons', sans-serif;
+  font-family: 'BagekiLuxury', sans-serif;
+  letter-spacing: 2.0px;
+  
 }
 
 /* Textura decorativa */
 .decoracion-cod-vestimenta {
   position: absolute;
-  width: 90%;
+  width: 85%;
   max-width: 350px;
   opacity: 0.9;
   z-index: 1;
-  height: 350px ;
+  height: 400px ;
   border-radius: 15px;
   
 }
@@ -784,7 +801,7 @@ body, html {
   align-items: center;
   justify-content: center;
   width: 90%;
-  max-width: 350px;
+  max-width: 400px;
   padding: 40px 20px;
 }
 
@@ -807,7 +824,7 @@ body, html {
 }
 
 .texto-invitacion-cod-vestimenta .titulo-2 {
-  font-family: "The Seasons", cursive;
+  font-family: "BagekiLuxury", cursive;
   font-size: 24px;
   color: #bea17b;
   margin: 0;
@@ -843,7 +860,7 @@ body, html {
   background-color: #bea17b;
   padding: 40px 20px;
   text-align: center;
-  font-family: 'The Seasons', serif;
+  font-family: 'BagekiLuxury', serif;
   color: #fff;
   overflow: hidden;
 }
@@ -937,7 +954,7 @@ body, html {
   text-align: center;
   color: white;
   overflow: visible;
-  font-family: 'The Seasons', sans-serif;
+  font-family: 'BagekiLuxury', sans-serif;
   border-radius: 50PX;
  
 }
@@ -973,6 +990,7 @@ body, html {
   margin-top: -75px;
 }
 .texto-invitacion-comparte .titulo-2 {
+  font-family: 'Cinzel', serif;
   font-size: 20px;
   color: #bea17b;
   margin: -5px;
@@ -1011,6 +1029,7 @@ body, html {
   font-weight: bold;
   margin-bottom: -75px;
   z-index: 3;
+  letter-spacing: 2.0px;
   
 }
 .comparte-btn:hover {
@@ -1039,7 +1058,8 @@ body, html {
   text-align: center;
   color: white;
   overflow: visible;
-  font-family: 'The Seasons', sans-serif;
+  font-family: 'BagekiLuxury', sans-serif;
+  letter-spacing: 2.0px;
   
  
 }
@@ -1109,7 +1129,8 @@ body, html {
   align-items: center; /* Centra verticalmente el bloque */
   text-align: center;
   overflow: hidden;
-  font-family: 'The Seasons', serif;
+  font-family: 'BagekiLuxury', serif;
+  letter-spacing: 2.0px;
 }
 
 /* Textura decorativa */
@@ -1118,6 +1139,7 @@ body, html {
   bottom: 15%; /* Mueve la textura hacia la parte baja, pero no tan abajo */
   left: 50%;
   transform: translateX(-50%);
+  background: url('img/texture-5edc12da.png') no-repeat center/cover;
   width: 90%;
   max-width: 500px;
   height: 270px;
@@ -1137,15 +1159,19 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 350px;
+  /* margin-top: 187px; */
+ /*  margin-bottom: -187px;
+ */
+  
 }
 
 /* Estilos de texto */
 .texto-1 .titulo-2 {
-  font-size: 1.1rem;
+  font-size: 1.0rem;
   color: #bea17b;
   margin: 0.3rem 0;
-  line-height: 1.4;
+  line-height: 0.9;
+  
 }
 
 .texto-1 h1.titulo-2 {
@@ -1157,99 +1183,132 @@ body, html {
   font-family: "Sloop Script", cursive;
   font-size: 1.8rem;
   color: #29402F;
-  margin-top: 0.8rem;
 }
 
 
 /* --- AJUSTES RESPONSIVOS --- */
 
 /* === Celulares === */
-@media (max-width: 600px) {
+@media (max-width: 359px){
   .nombres {
-    font-size: clamp(2rem, 7vw, 3rem);
-    padding-top: 60px;
+    font-size: 3rem;
   }
-
-  .frase-1 h1 {
-    font-size: 1.2rem;
-    padding: 0 10px;
+  .texto-1{
+    
+    line-height: 1.0rem;
   }
-
-  .texto-invitacion .titulo,
-  .texto-invitacion .titulo-1,
-  .texto-invitacion-padrinos .titulo-2 {
-    font-size: 1rem;
+  .texto-1 .titulo-2{
+    font-size: 0.9rem;
+    line-height: 1.0rem;
   }
-
-  .texto-invitacion .nombres-inv,
-  .texto-invitacion-local .nombres-local,
-  .texto-invitacion-regalos .nombres-regalos,
-  .texto-invitacion-cod-vestimenta .nombres-vestimenta {
-    font-size: clamp(1.5rem, 8vw, 2.5rem);
+  .cod-vestimenta {
+    height: 80vh;
   }
-
-  .galeria .titulo-galeria {
-    font-size: clamp(2.2rem, 9vw, 3rem);
+  .regalos{
+    height: 600px;
   }
-
-  .galeria .titulo-fotos {
-    font-size: clamp(1.2rem, 5vw, 1.5rem);
-    margin-top: -5px;
+  .texto-invitacion{
+    margin-top: -80px;
   }
-
-  .contenido-galeria img {
-    height: auto;
-    aspect-ratio: 1 / 1;
+  .invitacion .decoracion {
+    height: 500px;
   }
-
-  .texto-1 {
-    margin-top: 250px;
+  .texto-invitacion .nombres-inv{
+      font-size: 2.5rem;
   }
-
-  .decoracion-texto {
-    height: auto;
-    max-width: 90%;
+  .countdown{
+      gap: 4px;
+      
   }
+  .time-box {
+      padding: 10px 15px;
+  }
+}
+@media (min-width: 360px) and (max-width: 599px) {
+  .invitacion .decoracion {
+    height: 550px;
+  }
+  .countdown{
+    gap: 5px;
+    flex-wrap: wrap 100%;
+  }
+  .texto-1{
+    
+    line-height: 1.0rem;
+  }
+  .texto-1 .titulo-2{
+    font-size: 0.9rem;
+    line-height: 1.0rem;
+  }
+  
+  
 }
 
 /* === Tablets === */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .nombres {
-    font-size: clamp(2.5rem, 6vw, 3.5rem);
+@media (min-width: 600px) and (max-width: 1024px) {
+  
+  /* Seccion Invitacion */
+  .invitacion .decoracion {
+    height: 570px;
+    margin-bottom: -190px;
   }
-
-  .frase-1 h1 {
+  
+  .texto-invitacion .nombres-inv{
+    font-size: 5rem;
+  }
+  .texto-invitacion .titulo{
+    font-size: 2rem;
+  }
+  .texto-invitacion .mensaje{
     font-size: 1.5rem;
   }
-
-  .texto-invitacion .titulo,
-  .texto-invitacion .titulo-1,
-  .texto-invitacion-local .titulo-2 {
-    font-size: 1.3rem;
+  .texto-invitacion .nota-lg-1{
+    font-size: 1.5rem;
+  }
+  .texto-invitacion .nota-lg-2{
+    font-size: 1.2rem;
+  }
+  /* Seccion Padres */
+  .texto-invitacion .nombres-inv-2{
+    font-size: 3rem;
+  }
+  .texto-invitacion .titulo-1{
+    font-size: 1.7rem;
+  }
+  /* Seccion Padrinos */
+  .texto-invitacion-padrinos .nombres-inv{
+    font-size: 3.5rem;
+  }
+  .texto-invitacion-padrinos .titulo-2{
+    font-size: 1.7rem;
+  }
+   /* Seccion Local */
+  .texto-invitacion-local .titulo-2{
+    font-size: 1.5rem;
+  }
+  .texto-invitacion-local .nombres-local{
+    font-size: 4rem;
+    margin: auto;
+  }
+  .foto-local{
+    margin-top: 145px;
   }
 
-  .texto-invitacion .nombres-inv,
-  .texto-invitacion-regalos .nombres-regalos {
-    font-size: clamp(2rem, 6vw, 3rem);
+  /* Seccion Regalos */
+  .decoracion-regalos{
+    margin-top: 400px;
   }
-
-  .decoracion-texto {
-    height: 250px;
+  .contenido-regalos{
+    margin-top: 400px;
   }
-
-  .galeria .titulo-galeria {
-    font-size: clamp(3rem, 7vw, 4rem);
+  /* Seccion texto */
+  
+  .texto-1 .titulo-2{
+    font-size: 1.4rem;
+    line-height: 0.8erm;
   }
-
-  .galeria .titulo-fotos {
-    margin-top: -8px;
-  }
-
-  .contenido-galeria img {
-    height: 400px;
-  }
+  
 }
-
 /* === PCs y monitores grandes === */
 @media (min-width: 1025px) {
   #main{
@@ -1268,9 +1327,9 @@ body, html {
   .seccion-foto-1{
     background-position: center 10%;
   }
-  .invitacion .decoracion{
-    max-width: 500px;
-  }
+  /* Seccion Invitación */
+  
+
   .seccion-foto-2{
      background-position: center 5%;
   }
@@ -1283,27 +1342,82 @@ body, html {
   .contenido-regalos{
     margin-top: -450px;
   }
-  .texto-biblico{
-    
+  .invitacion{
+    height: 600px;
+  }
+  .invitacion .overlay{
+    height: 600px;
+  }
+  .texto-invitacion {
+    height: 600px;
+  }
+  .invitacion .decoracion {
+    height: 600px;
+  }
+  .texto-invitacion-padrinos{
+    max-width: 500px;
+  }
+  .invitacion-local{
+    height: 400px;
+  }
+  .invitacion-local .overlay-local{
+    height: 600px;
+  }
+  .invitacion-local .decoracion-local{
+    height: 600px;
+    margin-top: 150px;
+  }
+  /* SEccion REgalos */
+  .regalos .decoracion-regalos {
+    height: 300px;
+   
   }
   
+  
   .nombres {
-    font-size: clamp(3.5rem, 5vw, 5rem);
+    font-size: clamp(3.5rem, 9vw, 10rem);
+  }
+  /* Seccion Frase */
+  .frase-1{
+    height: 200px;
+  }
+  .frase-1 h1 {
+    font-size: 3rem;
   }
 
-  .frase-1 h1 {
-    font-size: 2rem;
+  .texto-invitacion-local .nombres-local{
+    font-size: clamp(4rem, 7vw, 6rem);
+    margin-top: 0px;
   }
+  
 
   .texto-invitacion .titulo,
-  .texto-invitacion .titulo-1 {
+  .texto-invitacion .titulo-1{
+    font-size: 2.5rem;
+  }
+  .texto-invitacion-local .titulo-2{
+    font-size: 2rem;
+    margin-top: -100px;
+  }
+
+  .texto-invitacion .nota-lg-1,
+  .texto-invitacion .nota-lg-2 {
     font-size: 1.5rem;
   }
 
   .texto-invitacion .nombres-inv,
   .texto-invitacion-local .nombres-local,
   .texto-invitacion-regalos .nombres-regalos {
-    font-size: clamp(3rem, 4vw, 4rem);
+    font-size: clamp(3rem, 6vw, 6rem);
+  }
+  .texto-invitacion .mensaje {
+    font-size: 1.8rem;
+  }
+  .texto-invitacion-padrinos .nombres-inv {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+  }
+  .texto-invitacion-padrinos .titulo-2{
+    font-size: 2rem;
   }
 
   .decoracion-texto {
@@ -1315,10 +1429,13 @@ body, html {
   }
 
   .contenido-galeria img {
-    height: 550px;
+    height: 800px;
+    background-position: center 85%;
   }
 
-  .texto-1 {
-    margin-top: 400px;
+  .texto-biblico {
+    background-position: center 25%;
   }
+
+  
 }
