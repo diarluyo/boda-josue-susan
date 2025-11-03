@@ -1240,6 +1240,9 @@ body, html {
     font-size: 0.9rem;
     line-height: 1.0rem;
   }
+  .decoracion-regalos {
+    height: 280px;
+  }
   
   
 }
