@@ -1,0 +1,295 @@
+@font-face {
+  font-family: "The Seasons";
+  src: url("fonts/The Seasons Font/Fontspring-DEMO-theseasons-lt.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:"Sloop Script" ;
+  src: url("fonts/Sloop Script Bold Two Regular/Sloop Script Bold Two Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:"Cinzel" ;
+  src: url("fonts/cinzel/CinzelDecorative-Regular.otf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:"BagekiLuxury" ;
+  src: url("fonts/bageki-luxury-font/BagekiLuxuryDemoRegular-1j47L.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  /* scroll-behavior: smooth; */
+  flex-direction: column;
+}
+#upload-section {
+    flex:1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'BagekiLuxury', serif;
+  overflow: hidden;
+   min-height: 0; 
+}
+
+
+.overlay-upload {
+  position: absolute;
+  inset: 0;
+  background-color: #29402F; /* verde petróleo con transparencia */
+  z-index: 1;
+}
+
+.upload-container {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  padding: 40px 60px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.titulo-upload {
+  font-family: "Sloop Script", cursive;
+  font-size: 3rem;
+  color: #fff;
+  
+  margin-bottom: 10px;
+}
+
+.descripcion-upload {
+  font-family: "The Seasons", serif;
+  color: #bea17b;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#fileInput {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #fff;
+  color: #29402F;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+#fileInput:hover {
+  background-color: #f7f7f7;
+}
+
+.boton-upload {
+  background-color: #bea17b;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-family: "BagekiLuxury", serif;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.boton-upload:hover {
+  background-color: #b98138;
+  transform: scale(1.05);
+}
+
+/* --- Barra de progreso --- */
+#progressContainer {
+  width: 100%;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+#progressBar {
+  width: 0%;
+  height: 100%;
+  background-color: #bea17b;
+  transition: width 0.4s ease;
+}
+
+#statusMessage {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: 2.5px;
+  min-height: 24px; /* espacio reservado para mensajes */
+}
+#fileInput{
+  display: none;
+}
+.file-label {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #29402F;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 3px;
+  transition: background 0.3s ease;
+}
+.file-name {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #bea17b;
+  font-weight: 500;
+  letter-spacing: 3px;
+  
+}
+
+.file-label:hover {
+  background-color: #bea17b;
+}
+
+/* --- MODAL --- */
+.modal {
+  display: none; /* Oculto por defecto */
+  font-family: 'BagekiLuxury', serif;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  letter-spacing: 2.5px;
+}
+
+.modal-content {
+  background: #ffffff;
+  color: #333;
+  padding: 25px 30px;
+  border-radius: 20px;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  animation: scaleIn 0.25s ease;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-content h2 {
+  margin-bottom: 8px;
+  color: #bea17b;
+  
+}
+
+.modal-content p {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #29402F;
+}
+
+.modal-content button {
+  font-family: 'BagekiLuxury', serif;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  background: #bea17b;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modal-content button:hover {
+  background: #a68b64;
+}
+
+/* Footer */
+/* === PIE DE PÁGINA === */
+* {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.footer {
+  background-color: #29402F;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+  font-family: 'BagekiLuxury', serif;
+  font-size: 1.2rem;
+  letter-spacing: 1.9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.footer p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer .btn-empresa {
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.icono-corazon {
+  width: 18px;
+  height: 18px;
+  fill: #ffffff;
+  animation: latido 1.5s infinite ease-in-out;
+  transform-origin: center;
+  display: inline-block;
+  will-change: transform;
+}
+
+
+/* Efecto de latido */
+  @keyframes latido {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+  }

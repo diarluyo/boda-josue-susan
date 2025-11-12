@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subir fotos y videos</title>
+  <link rel="stylesheet" href="subirArchivo.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body >
+  <section id="upload-section">
+    <div class="overlay-upload"></div>
+
+    <div class="upload-container">
+      <h1 class="titulo-upload">Sube tus fotos o videos</h1>
+      <p class="descripcion-upload">Puedes subir hasta 10 archivos pueden ser imagenes o videos.</p>
+
+      <form id="uploadForm">
+        <label for="fileInput" class="file-label">
+          Seleccionar Archivos
+        </label>
+        <input type="file" id="fileInput" name="files" multiple required />
+        <br><br>
+        <button type="submit" id="boton-upload" class="boton-upload">Subir Archivos</button>
+      </form>
+      <p id="fileName" class="fileName"></p>
+
+      <div id="progressContainer" style="display: none;">
+        <div id="progressBar"></div>
+      </div>
+
+      <p id="statusMessage"></p>
+    </div>
+  </section>
+  
+
+  <!-- Modal de confirmación -->
+  <div id="modalConfirm" class="modal">
+    <div class="modal-content">
+      <h2 id="modalTitle">Archivos subidos correctamente</h2>
+      <p id="modalMessage"></p>
+      <button id="modalClose">Aceptar</button>
+    </div>
+  </div>
+<!-- PIE DE PÁGINA -->
+      <footer class="footer">
+        <p>
+          Diseñado con 
+          <svg class="icono-corazon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 21s-6.715-4.727-10-9c-1.986-2.523-.643-7 3-7 2.023 0 3.561 1.479 4 3 0.439-1.521 1.977-3 4-3 3.643 0 4.986 4.477 3 7-3.285 4.273-10 9-10 9z"/>
+          </svg>
+          por<a href="https://wa.me/51931293336?text=¡Hola! deseo más información sobre la creación de invitaciones digitales"
+        target="_blank" class="btn-empresa">
+          Iterabyd
+        </a>
+        </p>
+      </footer>
+  
+
+<script src="subirArchivos.js" defer></script>
+</body>
+
+</html>
