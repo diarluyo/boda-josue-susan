@@ -113,6 +113,14 @@ document.addEventListener("DOMContentLoaded", () => {
     carrusel.style.transform = `translateX(-${index * 100}%)`;
   });
 
+  window.addEventListener("load", () => {
+    const tooltip = document.querySelector(".tooltip-text");
+    tooltip.style.opacity = "1";
+    setTimeout(() => {
+      tooltip.style.opacity = "0";
+    }, 20000); // visible 3 segundos
+  });
+
 
 });
 

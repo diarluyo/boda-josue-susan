@@ -49,7 +49,7 @@
       console.log("Total bytes (calculado):", totalBytes);
 
       // Preparar UI
-      status.textContent = "⏳ Subiendo archivos...";
+      status.textContent = "Subiendo archivos...";
       if (progressContainer) progressContainer.style.display = "block";
       if (progressBar) progressBar.style.width = "0%";
 
